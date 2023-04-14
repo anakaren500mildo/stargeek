@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 43px 300px auto;
+    grid-template-areas: 
+    "c"
+    "i"
+    "p";
+    padding: 30px 15px;
+    background-color: #525050;
+}
+
+header{
+    grid-area: "c";
+    background-color: #121836;
+    padding: 10px;
+
+}
+
+.imagem{
+    grid-area: "i";
+    background-image: url(imagens/image13.jpg);
+   
+}
+
+main{
+    grid-area: "p";
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.btn{
+    font-family: 'Kaisei HarunoUmi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #969191;
+    background-color: #121836;
+    width: 258px;
+    height: 61px;
+    text-decoration: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.imagem{
+    grid-area: i;
+    background-image: url(imagens/image13.jpg);
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 50%;
+    
+}
+
+form>input,
+form>div>input{
+    
+    height: 37px;
+    background: #121836;
+    color: #6B6B6B;
+}
+
+
+
+
+form>input[type="submit"]{
+    font-family: 'Kaisei HarunoUmi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;    
+    line-height: 52px;
+    height:   57px;
+    margin-top: 30px;
+
+}
+
+.títuloform{
+   
+font-family: 'Kaisei HarunoUmi';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 52px;
+
+color: #C1BABA;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 105px;
+  
+}
+
+.cardl{
+   
+    display:flex;
+    justify-content: space-between;
+    margin: 0 15%;
+   
+    width: 80%;
+}
+
+.card{
+    width: 171px;
+    height: 243px;
+    display: flex;
+    align-items: flex-end;
+}
+.cardbtn{
+    width: 100%;
+    height: 30px ;
+    background: rgba(202, 196, 196, 0.54);
+    display: flex;
+    justify-content: flex-end;
+}
+.btna{
+    background-image: url(imagens/alterar.png);
+    width: 25px;
+    height: 25px;
+}
+.btne{
+    background-image: url(imagens/excluir.png);
+    width: 25px;
+    height: 25px;
+}
+
+.fitemmaior{
+    display: flex;
+    gap: 20%;
+    width: 100%;
+    
+}
+
+.fitemmaior> input{
+    width: 338px;
+height: 312px;
+
+}
+
+.bfitem{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:600px) {
+
+    .fitemmaior{
+        
+        width: 100%;
+     
+    }
+
+    .fitemmaior> input{
+        width: 80%;
+        height: 312px;
+    
+    }
+
+    form{
+        width: 90%;
+    }
+
+    .cardl{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
