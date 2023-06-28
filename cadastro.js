@@ -3,7 +3,7 @@ const msg = document.querySelector(".mensagem")
 const nome = document.getElementById("nome");
 const email = document.getElementById("email");
 const senha = document.getElementById("senha");
-alert("oi");
+
 
 function verificarEmail(email, evento){
     let dados = JSON.parse(localStorage.getItem("bd"));
@@ -51,9 +51,9 @@ function criarUsuario(evento){
     let dados = JSON.parse(localStorage.getItem("bd")) || [];
     dados.push(
         {
-        nomecliente : nome.value,
-        emailcliente : email.value,
-        senhacliente : senha.value
+        nome : nome.value,
+        email : email.value,
+        senha : senha.value
         }
     )
     localStorage.setItem("bd", JSON.stringify(dados));
